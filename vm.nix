@@ -11,13 +11,13 @@
   # Install necessary packages
   environment.systemPackages = with pkgs; [
     cockpit
-    virt-manager
+#    virt-manager
     virt-viewer
     spice spice-gtk
     spice-protocol
     win-virtio
     win-spice
-    gnome.adwaita-icon-theme
+#    gnome.adwaita-icon-theme
   ];
 
   # Manage the virtualisation services
