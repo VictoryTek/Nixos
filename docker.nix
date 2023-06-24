@@ -5,7 +5,7 @@
   # Docker setup
   virtualisation.docker.enable = true;
 
-  # Add user to libvirtd group
+  # Add user to docker group
   users.users.nimda.extraGroups = [ "docker" ];
 
   # Install necessary packages
