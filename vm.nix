@@ -11,7 +11,6 @@
   # Install necessary packages
   environment.systemPackages = with pkgs; [
     cockpit
-    virt-manager
     virt-viewer
     spice spice-gtk
     spice-protocol
