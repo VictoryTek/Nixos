@@ -32,5 +32,7 @@
     spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
+  services.cockpit.enable = true;
+
 
 }
