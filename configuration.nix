@@ -26,10 +26,10 @@
   # Enable networking
   networking.networkmanager.enable = true;
   networking.interfaces.enpls0.ipv4.addresses = [ {
-  address = "192.168.122.69";
+  address = "192.168.122.?";
   prefixLength = 24;
   } ];
-  networking.defaultGateway = "192.168.122.1";
+  networking.defaultGateway = "192.168.1.1";
   networking.nameservers = [ "1.1.1.1" ];
 
   # Set your time zone.
@@ -136,7 +136,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #Browsers
   brave
   firefox
@@ -145,6 +144,8 @@
   vscodium
   wget
   git
+  python3
+  
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
