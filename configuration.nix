@@ -26,6 +26,12 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.interfaces.enpls0.ipv4.addresses = [ {
+  address = "192.168.1.?";
+  prefixLength = 24;
+  } ];
+  networking.defaultGateway = "192.168.1.1";
+  networking.nameservers = [ "1.1.1.1" ];
 
   # Set your time zone.
   time.timeZone = "America/Chicago";
@@ -87,16 +93,6 @@
     description = "Nimda";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
-     #Browsers
-      brave
-      firefox
-     #Services
-      cockpit
-      docker
-      docker-compose
-     #Utilities    
-      terminator
-      vscodium
     ];
   };
  
@@ -116,10 +112,36 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  environment.gnome.excludePackages = (with pkgs; [
+  gnome-photos
+  gnome-tour
+]) ++ (with pkgs.gnome; [
+  cheese # webcam tool
+  gnome-music
+  epiphany # web browser
+  geary # email reader
+  evince # document viewer
+  gnome-characters
+  totem # video player
+  tali # poker game
+  iagno # go game
+  hitori # sudoku game
+  atomix # puzzle game
+  gnome-maps
+  gnome-clocks
+  gnome-weather
+]);
+
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-  ];
+  #Browsers
+  brave
+  firefox
+  #Utilities    
+  terminator
+  vscodium
+  wget
+  git
+];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
