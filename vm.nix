@@ -10,7 +10,8 @@
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [
-    cockpit
+    # cockpit
+    # nur.repos.fedx.cockpit-machines
     virt-manager
     virt-viewer
     spice spice-gtk
