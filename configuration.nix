@@ -9,7 +9,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./vm.nix
-      ./docker.nix
     ];
 
   # Bootloader.
@@ -27,10 +26,10 @@
   # Enable networking
   networking.networkmanager.enable = true;
   networking.interfaces.enpls0.ipv4.addresses = [ {
-  address = "192.168.1.?";
+  address = "192.168.122.69";
   prefixLength = 24;
   } ];
-  networking.defaultGateway = "192.168.1.1";
+  networking.defaultGateway = "192.168.122.1";
   networking.nameservers = [ "1.1.1.1" ];
 
   # Set your time zone.
@@ -91,14 +90,12 @@
   users.users.nimda = {
     isNormalUser = true;
     description = "Nimda";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+    
     ];
   };
- 
-  # Docker setup
-  virtualisation.docker.enable = true;  
-  
+
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "nimda";
@@ -132,7 +129,14 @@
   gnome-weather
 ]);
 
+  nixpkgs.config.packageOverrides = pkgs: {
+    nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+      inherit pkgs;
+    };
+  };
+
   environment.systemPackages = with pkgs; [
+  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #Browsers
   brave
   firefox
@@ -141,7 +145,7 @@
   vscodium
   wget
   git
-];
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -154,7 +158,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
@@ -171,4 +175,5 @@
   system.stateVersion = "23.05"; # Did you read the comment?
 
 }
+
 
