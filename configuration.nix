@@ -140,13 +140,13 @@
   #Browsers
   brave
   firefox
-  #Utilities    
+  #Utilities
+  neofetch
   terminator
   #vscodium
   wget
   git
   python3
-  
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
