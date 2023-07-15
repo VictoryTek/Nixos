@@ -31,6 +31,7 @@
         ovmf.packages = [ pkgs.OVMFFull.fd ];
       };
     };
+    -netdev tap,id=net0,br=virbr0,helper=$(type -p qemu-bridge-helper)
     spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
