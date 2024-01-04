@@ -1,7 +1,9 @@
-# Version 1.6
+#Victory Nixos Configuration
 # Server Version
+# Version 1.6
 # NixOS Version 23.05
-# Changelog found in /etc/nixos
+# https://github.com/VictoryTek
+
 
 { config, pkgs, ... }:
 
