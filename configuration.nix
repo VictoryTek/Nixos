@@ -11,22 +11,22 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./modules/de/gnome.nix
-      ./modules/installs/packages.nix
-      ./modules/installs/virtualbox-ga.nix
-      ./modules/network/dhcp.nix
-      ./modules/network/static.nix
-      ./modules/services/docker.nix
-      ./modules/services/jellyfin.nix
-      ./modules/services/plex.nix
-      ./modules/services/print.nix
-      ./modules/services/smb.nix
-      ./modules/services/sound.nix
-      ./modules/services/ssh.nix
-      ./modules/services/qemu_kvm.nix
-      ./modules/system/cleanup.nix
-      ./modules/system/nur.nix
       ./modules/system/users.nix
+#      ./modules/de/gnome.nix
+#      ./modules/installs/packages.nix
+#      ./modules/installs/virtualbox-ga.nix
+      ./modules/network/dhcp.nix
+#      ./modules/network/static.nix
+#      ./modules/services/docker.nix
+#      ./modules/services/jellyfin.nix
+#      ./modules/services/plex.nix
+#      ./modules/services/print.nix
+#      ./modules/services/smb.nix
+#      ./modules/services/sound.nix
+#      ./modules/services/ssh.nix
+#      ./modules/services/qemu_kvm.nix
+#      ./modules/system/nur.nix
+#      ./modules/system/cleanup.nix
     ];
 
   # Bootloader.
