@@ -22,7 +22,7 @@
     curl
     ];
   };
-  # Set default editor to vim
+  # Set default editor to nano
   environment = {
     variables = {
       EDITOR = "nano";
