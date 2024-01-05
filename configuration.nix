@@ -18,13 +18,17 @@
       ./modules/network/dhcp.nix
 #      ./modules/network/static.nix
 #      ./modules/services/docker.nix
+#      ./modules/services/podman.nix
 #      ./modules/services/jellyfin.nix
 #      ./modules/services/plex.nix
 #      ./modules/services/print.nix
 #      ./modules/services/smb.nix
 #      ./modules/services/sound.nix
 #      ./modules/services/ssh.nix
+#      ./modules/services/traefik.nix
 #      ./modules/services/qemu_kvm.nix
+#      ./modules/services/virtualbox.nix
+#      ./modules/system/flakes-enabled.nix
 #      ./modules/system/nur.nix
 #      ./modules/system/cleanup.nix
     ];
