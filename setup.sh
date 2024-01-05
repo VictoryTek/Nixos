@@ -108,7 +108,7 @@ function move() {
     sudo mkdir /etc/nixos/modules/services
     sudo mkdir /etc/nixos/modules/system
 	echo
-    sudo mv -i ~/VictoryNixos/modules/gnome.nix /etc/nixos/modules/de
+    sudo mv -i /home/$USER/VictoryNixos/modules/gnome.nix /etc/nixos/modules/de
     sudo mv -i ~/VictoryNixos/modules/packages.nix /etc/nixos/modules/installs
     sudo mv -i ~/VictoryNixos/modules/virtualbox-ga.nix /etc/nixos/modules/installs
     sudo mv -i ~/VictoryNixos/modules/dhcp.nix /etc/nixos/modules/network
