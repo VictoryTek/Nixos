@@ -42,7 +42,7 @@ function greeting() {
 echo -e "+-----------------------------------------------------------------+"
 echo -e "            Hello, $USER. Welcome to Victory Update.               "
 echo -e "+                                                                 +"
-echo -e "+                You are attempting to Update                     +"   
+echo -e "+                 You are attempting to Setup                     +"   
 echo -e "+                                                                 +"
 echo -e "+                             Nixos                               +"
 echo -e "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
@@ -208,8 +208,8 @@ fi
 
 
 greeting	
-git
-download
+#git
+#download
 move
 config
 #update
