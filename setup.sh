@@ -42,7 +42,7 @@ function greeting() {
 echo -e "+-----------------------------------------------------------------+"
 echo -e "            Hello, $USER. Welcome to Victory Update.               "
 echo -e "+                                                                 +"
-echo -e "+                 You are atempting to Update                     +"   
+echo -e "+                You are attempting to Update                     +"   
 echo -e "+                                                                 +"
 echo -e "+                             Nixos                               +"
 echo -e "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
@@ -100,13 +100,13 @@ function download() {
 # make and move
 function move() {
     echo
-    cd /etc/nixos
-    echo
-	sudo mkdir modules
+	sudo mkdir /etc/nixos/modules
 	echo
-    cd modules
-	echo
-    sudo mkdir de installs network services system
+    sudo mkdir /etc/nixos/modules/de    
+    sudo mkdir /etc/nixos/modules/installs
+    sudo mkdir /etc/nixos/modules/network
+    sudo mkdir /etc/nixos/modules/services
+    sudo mkdir /etc/nixos/modules/system
 	echo
     sudo mv -i ~/VictoryNixos/modules/gnome.nix /etc/nixos/modules/de
     sudo mv -i ~/VictoryNixos/modules/packages.nix /etc/nixos/modules/installs
@@ -168,7 +168,7 @@ function upgrade() {
     check_exit_status
 }
 
-# Remove the old image
+# Reboot
 function reboot() {
     	echo "Do you want to restart? [y,n]"
 	read input
