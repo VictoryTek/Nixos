@@ -109,26 +109,26 @@ function move() {
     sudo mkdir /etc/nixos/modules/system
 	echo
     sudo mv -i /home/$USER/VictoryNixos/modules/gnome.nix /etc/nixos/modules/de
-    sudo mv -i ~/VictoryNixos/modules/packages.nix /etc/nixos/modules/installs
-    sudo mv -i ~/VictoryNixos/modules/virtualbox-ga.nix /etc/nixos/modules/installs
-    sudo mv -i ~/VictoryNixos/modules/dhcp.nix /etc/nixos/modules/network
-    sudo mv -i ~/VictoryNixos/modules/static.nix /etc/nixos/modules/network
-    sudo mv -i ~/VictoryNixos/modules/docker.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/podman.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/podman.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/plex.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/jellyfin.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/print.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/smb.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/sound.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/ssh.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/traefik.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/qemu_kvm.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/virtualbox.nix /etc/nixos/modules/services
-    sudo mv -i ~/VictoryNixos/modules/cleanup.nix /etc/nixos/modules/system
-    sudo mv -i ~/VictoryNixos/modules/flakes-enabled.nix /etc/nixos/modules/system
-    sudo mv -i ~/VictoryNixos/modules/nur.nix /etc/nixos/modules/system
-    sudo mv -i ~/VictoryNixos/modules/users.nix /etc/nixos/modules/system
+    sudo mv -i /home/$USER/VictoryNixos/modules/packages.nix /etc/nixos/modules/installs
+    sudo mv -i /home/$USER/VictoryNixos/modules/virtualbox-ga.nix /etc/nixos/modules/installs
+    sudo mv -i /home/$USER/VictoryNixos/modules/dhcp.nix /etc/nixos/modules/network
+    sudo mv -i /home/$USER/VictoryNixos/modules/static.nix /etc/nixos/modules/network
+    sudo mv -i /home/$USER/VictoryNixos/modules/docker.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/podman.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/podman.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/plex.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/jellyfin.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/print.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/smb.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/sound.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/ssh.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/traefik.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/qemu_kvm.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/virtualbox.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/cleanup.nix /etc/nixos/modules/system
+    sudo mv -i /home/$USER/VictoryNixos/modules/flakes-enabled.nix /etc/nixos/modules/system
+    sudo mv -i /home/$USER/VictoryNixos/modules/nur.nix /etc/nixos/modules/system
+    sudo mv -i /home/$USER/VictoryNixos/modules/users.nix /etc/nixos/modules/system
 	echo
 	echo "NixOS modules have been placed"
 	echo
