@@ -172,6 +172,10 @@ function upgrade() {
 	echo
 	echo "Nixos updated"
 	echo
+	sudo nano /etc/nixos/configuration.nix
+	echo 
+	echo "Configuration version updated"
+	echo
     check_exit_status
 }
 
