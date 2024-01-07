@@ -144,7 +144,7 @@ function config() {
 	echo
 	sleep 3s
 	echo
-    sudo nano configuration.nix
+    sudo nano /etc/nixos/configuration.nix
     echo
 	echo "NixOS configuration has been changed and configured."
 	echo
