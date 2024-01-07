@@ -82,7 +82,7 @@ fi
 
 # Remove the container
 function currentVersion() {
-	echo "You are running this version of Nixos"
+	echo "You are running this version of Nixos currently"
 	echo
 	nixos-version
 	echo
@@ -218,4 +218,4 @@ currentVersion
 update
 list
 upgrade
-#reboot
+reboot
