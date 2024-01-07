@@ -115,7 +115,6 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/static.nix /etc/nixos/modules/network
     sudo mv -i /home/$USER/VictoryNixos/modules/docker.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/podman.nix /etc/nixos/modules/services
-    sudo mv -i /home/$USER/VictoryNixos/modules/podman.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/plex.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/jellyfin.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/print.nix /etc/nixos/modules/services
@@ -142,6 +141,8 @@ function config() {
 	sudo rm -rf /etc/nixos/configuration.nix
     echo
     sudo mv -i ~/VictoryNixos/configuration.nix /etc/nixos
+	echo
+	sleep 3s
 	echo
     sudo nano configuration.nix
     echo
