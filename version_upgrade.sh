@@ -29,9 +29,9 @@ check_exit_status() {
 		echo "[ERROR] Update Failed! Check the errors and try again"
 		echo
 		
-		read -p "The last command exited with an error. Exit script? (y/n) " answer
+		read -p "The last command exited with an error. Exit script? (y,Y/n,N) " answer
 
-            if [ "$answer" == "y" ]
+            if [ "$answer" == "y" ] || [ "$answer" == "Y" ]
             then
                 exit 1
             fi
@@ -58,7 +58,7 @@ echo -e "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 	   echo "Nothing was entered by the user"
 
 	# was it a y or a yes?
-	elif [[ "$input" == "y" ]] || [[ "$input" == "yes" ]]; then
+	elif [[ "$input" == "y" ]] || [[ "$input" == "Y" ]] || [[ "$input" == "yes" ]] || [[ "$input" == "Yes" ]]; then
 
 	   echo "You replied $input, you are ready to start"
 	   echo
@@ -104,7 +104,7 @@ function update() {
 	   echo "Nothing was entered by the user"
 
 	# was it a y or a yes?
-	elif [[ "$input" == "y" ]] || [[ "$input" == "yes" ]]; then
+	elif [[ "$input" == "y" ]] || [[ "$input" == "Y" ]] || [[ "$input" == "yes" ]] || [[ "$input" == "Yes" ]]; then
 
 	   echo "You replied $input, you are ready to start"
 	   echo
@@ -144,7 +144,7 @@ function list() {
 	   echo "Nothing was entered by the user"
 
 	# was it a y or a yes?
-	elif [[ "$input" == "y" ]] || [[ "$input" == "yes" ]]; then
+	elif [[ "$input" == "y" ]] || [[ "$input" == "Y" ]] || [[ "$input" == "yes" ]] || [[ "$input" == "Yes" ]]; then
 
 	   echo "You replied $input, Let's upgrade NixOS"
 	   echo
@@ -186,7 +186,7 @@ function reboot() {
 	   echo "Nothing was entered by the user"
 
 	# was it a y or a yes?
-	elif [[ "$input" == "y" ]] || [[ "$input" == "yes" ]]; then
+	elif [[ "$input" == "y" ]] || [[ "$input" == "Y" ]] || [[ "$input" == "yes" ]] || [[ "$input" == "Yes" ]]; then
 
 	   echo "You replied $input, rebooting"
 	   echo
