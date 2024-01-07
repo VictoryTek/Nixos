@@ -6,10 +6,13 @@ This repo contains all the files I have stripped from the configuration.nix to i
 
 ```
 nix-shell -p git
+
 ```
 git clone http://github.com/victorytek/VictoryNixos
+
 ```
 cd VictoryNixos
+
 ```
 ./setup.sh
 ```
