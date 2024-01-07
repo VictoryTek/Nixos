@@ -80,6 +80,15 @@ fi
 	check_exit_status
 }
 
+# Remove the container
+function currentVersion() {
+	echo "You are running this version of Nixos"
+	echo
+	nixos-version
+	echo
+    check_exit_status
+}
+
 # Change to the new stable branch
 function update() {
     echo "What version of NixOS are we Upgrading to?"
@@ -205,6 +214,7 @@ fi
 
 
 greeting	
+currentVersion
 update
 list
 upgrade
