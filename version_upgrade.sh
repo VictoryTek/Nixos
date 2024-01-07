@@ -207,5 +207,5 @@ fi
 greeting	
 update
 list
-#upgrade
+upgrade
 #reboot
