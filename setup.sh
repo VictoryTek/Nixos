@@ -81,7 +81,7 @@ fi
 
 # install git
 function git() {
-	sudo nix-shell -p git
+	nix-shell -p git
 	echo
 	echo "Git installed in this shell"
 	echo
@@ -90,7 +90,7 @@ function git() {
 
 # download from github
 function download() {
-	sudo git clone https://github.com/victorytek/victorynixos
+	git clone https://github.com/victorytek/victorynixos
 	echo
 	echo "NixOS modules downloaded"
 	echo
@@ -128,6 +128,10 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/flakes-enabled.nix /etc/nixos/modules/system
     sudo mv -i /home/$USER/VictoryNixos/modules/nur.nix /etc/nixos/modules/system
     sudo mv -i /home/$USER/VictoryNixos/modules/users.nix /etc/nixos/modules/system
+    sudo mv -i /home/$USER/VictoryNixos/update.sh /home/$USER/Documents
+    sudo mv -i /home/$USER/VictoryNixos/version_upgrade.sh /home/$USER/Documents
+
+
 	echo
 	echo "NixOS modules have been placed"
 	echo
@@ -213,6 +217,6 @@ greeting
 #download
 move
 config
-#update
-#upgrade
-#reboot
+update
+upgrade
+reboot
