@@ -16,6 +16,7 @@
 
 
 # Make sure each command executes properly
+clear
 check_exit_status() {
 
 	if [ $? -eq 0 ]
