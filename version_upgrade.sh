@@ -41,9 +41,9 @@ check_exit_status() {
 function greeting() {
 
 echo -e "+-----------------------------------------------------------------+"
-echo -e "            Hello, $USER. Welcome to Victory Update.               "
+echo -e "            Hello, $USER. Welcome to Victory Scripts.              "
 echo -e "+                                                                 +"
-echo -e "+            You are attempting to Version Upgrade                +"   
+echo -e "+           You are attempting a Version Upgrade to               +"   
 echo -e "+                                                                 +"
 echo -e "+                             NixOS                               +"
 echo -e "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"

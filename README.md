@@ -13,3 +13,16 @@ cd VictoryNixos
 
 ./setup.sh
 ```
+
+To update easily
+```
+cd Documents
+
+./update.sh
+```
+To Upgrade to the next version of NixOS
+```
+cd Documents
+
+./version_upgrade.sh
+```
