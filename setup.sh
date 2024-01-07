@@ -40,11 +40,11 @@ check_exit_status() {
 function greeting() {
 
 echo -e "+-----------------------------------------------------------------+"
-echo -e "            Hello, $USER. Welcome to Victory Update.               "
+echo -e "            Hello, $USER. Welcome to Victory Scripts.              "
 echo -e "+                                                                 +"
 echo -e "+                 You are attempting to Setup                     +"   
 echo -e "+                                                                 +"
-echo -e "+                             Nixos                               +"
+echo -e "+                             NixOS                               +"
 echo -e "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 #	sleep 5s
