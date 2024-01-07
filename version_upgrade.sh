@@ -31,7 +31,7 @@ check_exit_status() {
 		
 		read -p "The last command exited with an error. Exit script? (y,Y/n,N) " answer
 
-            if [ "$answer" == "y" ] || [ "$answer" == "Y" ]
+            if [ "$answer" == "y" ] || [ "$answer" == "Y" ] || [[ "$input" == "yes" ]] || [[ "$input" == "Yes" ]]
             then
                 exit 1
             fi
@@ -58,7 +58,7 @@ echo -e "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 	   echo "Nothing was entered by the user"
 
 	# was it a y or a yes?
-	elif [[ "$input" == "y" ]] || [[ "$input" == "Y" ]] || [[ "$input" == "yes" ]] || [[ "$input" == "Yes" ]]; then
+	elif [[ "$input" == "y" ]] [[ "$input" == "Y" ]] || [[ "$input" == "yes" ]] || [[ "$input" == "Yes" ]]; then
 
 	   echo "You replied $input, you are ready to start"
 	   echo
