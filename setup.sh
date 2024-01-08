@@ -108,6 +108,7 @@ function move() {
     sudo mkdir /etc/nixos/modules/network
     sudo mkdir /etc/nixos/modules/services
     sudo mkdir /etc/nixos/modules/system
+	sudo mkdir /etc/nixos/.secrets
 	echo
     sudo mv -i /home/$USER/VictoryNixos/modules/gnome.nix /etc/nixos/modules/de
     sudo mv -i /home/$USER/VictoryNixos/modules/packages.nix /etc/nixos/modules/installs
@@ -131,8 +132,8 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/users.nix /etc/nixos/modules/system
     sudo mv -i /home/$USER/VictoryNixos/update.sh /home/$USER/Documents
     sudo mv -i /home/$USER/VictoryNixos/version_upgrade.sh /home/$USER/Documents
-
-
+    sudo mv -i /home/$USER/VictoryNixos/smb-data /etc/nixos/.secrets
+    sudo mv -i /home/$USER/VictoryNixos/smb-mydata /etc/nixos/.secrets
 	echo
 	echo "NixOS modules have been placed"
 	echo

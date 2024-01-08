@@ -19,7 +19,7 @@
         # this line prevents hanging on network split
         automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.d";
 
-      in ["${automount_opts},credentials=/etc/nixos/smb-data-secrets,uid=1000,rw"];
+      in ["${automount_opts},credentials=/etc/nixos/.secrets/smb-data-secrets,uid=1000,rw"];
   };
 
   # Mount My_Media
@@ -30,7 +30,7 @@
         # this line prevents hanging on network split
         automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.d";
 
-      in ["${automount_opts},credentials=/etc/nixos/smb-mydata-secrets,uid=1000,rw"];
+      in ["${automount_opts},credentials=/etc/nixos/.secrets/smb-mydata-secrets,uid=1000,rw"];
   };
 
 }
