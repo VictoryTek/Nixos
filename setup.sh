@@ -140,6 +140,15 @@ function move() {
     check_exit_status
 }
 
+# Stop the running container
+function secrets() {
+	echo
+	sudo chmod 0600 /etc/nixos/.secrets/smb-data
+	sudo chmod 0600 /etc/nixos/.secrets/smb-mydata
+	echo
+    check_exit_status
+}
+
 # Change configs and activate modules
 function config() {
     sudo cp -r /etc/nixos/configuration.nix /etc/nixos/configuration.nix.old
