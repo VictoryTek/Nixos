@@ -1,4 +1,4 @@
-#Victory Nixos Configuration
+# Victory Nixos Configuration
 # Server Version
 # Version 1.6
 # NixOS Version 23.05
