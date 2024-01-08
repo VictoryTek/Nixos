@@ -12,7 +12,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/system/users.nix
-#      ./modules/de/gnome.nix
+      ./modules/de/gnome.nix
 #      ./modules/installs/packages.nix
 #      ./modules/installs/virtualbox-ga.nix
       ./modules/network/dhcp.nix
@@ -24,7 +24,7 @@
 #      ./modules/services/print.nix
 #      ./modules/services/smb.nix
 #      ./modules/services/sound.nix
-#      ./modules/services/ssh.nix
+      ./modules/services/ssh.nix
 #      ./modules/services/traefik.nix
 #      ./modules/services/qemu_kvm.nix
 #      ./modules/services/virtualbox.nix
