@@ -80,24 +80,6 @@ fi
 	check_exit_status
 }
 
-# install git
-function git() {
-	nix-shell -p git
-	echo
-	echo "Git installed in this shell"
-	echo
-    check_exit_status
-}
-
-# download from github
-function download() {
-	git clone https://github.com/victorytek/victorynixos
-	echo
-	echo "NixOS modules downloaded"
-	echo
-    check_exit_status
-}
-
 # make and move
 function move() {
     echo
@@ -151,9 +133,9 @@ function secrets() {
 
 # Change configs and activate modules
 function config() {
-    sudo cp -r /etc/nixos/configuration.nix /etc/nixos/configuration.nix.old
+    sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.old
     echo
-	sudo rm -rf /etc/nixos/configuration.nix
+#	sudo rm -rf /etc/nixos/configuration.nix
     echo
     sudo mv -i ~/VictoryNixos/configuration.nix /etc/nixos
 	echo
@@ -211,7 +193,7 @@ function reboot() {
 fi
 
 	echo
-	sudo shutdown --reboot 1
+	shutdown --reboot 1
     echo
 	echo "Rebooting in 1 minute"
     echo
@@ -224,8 +206,6 @@ fi
 
 
 greeting	
-#git
-#download
 move
 config
 update
