@@ -97,6 +97,7 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/virtualbox-ga.nix /etc/nixos/modules/installs
     sudo mv -i /home/$USER/VictoryNixos/modules/dhcp.nix /etc/nixos/modules/network
     sudo mv -i /home/$USER/VictoryNixos/modules/static.nix /etc/nixos/modules/network
+    sudo mv -i /home/$USER/VictoryNixos/modules/flatpak.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/docker.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/podman.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/plex.nix /etc/nixos/modules/services

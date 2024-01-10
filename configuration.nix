@@ -17,6 +17,7 @@
 #      ./modules/installs/virtualbox-ga.nix
       ./modules/network/dhcp.nix
 #      ./modules/network/static.nix
+#      ./modules/services/flatpak.nix
 #      ./modules/services/docker.nix
 #      ./modules/services/podman.nix
 #      ./modules/services/jellyfin.nix
@@ -74,13 +75,6 @@
     xserver = {
       layout = "us";
       xkbVariant = "";
-    };
-  };
-
-  # A portal frontend service for Flatpak and other desktop containment frameworks.
-  xdg = {
-    portal = {
-      enable = true;
     };
   };
 
