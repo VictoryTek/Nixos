@@ -106,6 +106,7 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/smb.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/sound.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/ssh.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/tailscale.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/traefik.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/qemu_kvm.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/virtualbox.nix /etc/nixos/modules/services

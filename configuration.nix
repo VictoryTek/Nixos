@@ -26,6 +26,7 @@
 #      ./modules/services/smb.nix
 #      ./modules/services/sound.nix
       ./modules/services/ssh.nix
+#      ./modules/services/tailscale.nix
 #      ./modules/services/traefik.nix
 #      ./modules/services/qemu_kvm.nix
 #      ./modules/services/virtualbox.nix
