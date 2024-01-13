@@ -6,16 +6,17 @@
 
 {
 
-  # Enable DHCP Networking
+  # Enable Tailscale
   services = {
     tailscale = {
       enable = true;
     }
   }
 
-  networking = {
-    firewall = {
-        allowedUDPPorts = [ ${services.tailscale.port} ];
+  # Open Tailscale network port
+  services = {
+    tailscale = {
+      port = 41641;
     };
   };
 
