@@ -10,8 +10,8 @@
   services = {
     tailscale = {
       enable = true;
-    }
-  }
+    };
+  };
 
   # Open Tailscale network port
   services = {
