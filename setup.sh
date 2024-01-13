@@ -90,7 +90,7 @@ function move() {
     sudo mkdir /etc/nixos/modules/network
     sudo mkdir /etc/nixos/modules/services
     sudo mkdir /etc/nixos/modules/system
-	sudo mkdir /etc/nixos/.secrets
+	sudo mkdir /etc/nixos/secrets
 	echo
     sudo mv -i /home/$USER/VictoryNixos/modules/gnome.nix /etc/nixos/modules/de
     sudo mv -i /home/$USER/VictoryNixos/modules/packages.nix /etc/nixos/modules/installs
@@ -116,8 +116,8 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/users.nix /etc/nixos/modules/system
     sudo mv -i /home/$USER/VictoryNixos/update.sh /home/$USER/Documents
     sudo mv -i /home/$USER/VictoryNixos/Version_Upgrade.sh /home/$USER/Documents
-    sudo mv -i /home/$USER/VictoryNixos/smb-data /etc/nixos/.secrets
-    sudo mv -i /home/$USER/VictoryNixos/smb-mydata /etc/nixos/.secrets
+    sudo mv -i /home/$USER/VictoryNixos/smb-data /etc/nixos/secrets
+    sudo mv -i /home/$USER/VictoryNixos/smb-mydata /etc/nixos/secrets
 	echo
 	echo "NixOS modules have been placed"
 	echo
@@ -127,8 +127,10 @@ function move() {
 # Stop the running container
 function secrets() {
 	echo
-	sudo chmod 0600 /etc/nixos/.secrets/smb-data
-	sudo chmod 0600 /etc/nixos/.secrets/smb-mydata
+	sudo chmod 0600 /etc/nixos/secrets/smb-data
+	sudo chmod 0600 /etc/nixos/secrets/smb-mydata
+	echo
+	sudo mv /etc/nixos/secrets /etc/nixos/.secrets
 	echo
     check_exit_status
 }
