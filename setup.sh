@@ -139,8 +139,6 @@ function secrets() {
 function config() {
     sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.old
     echo
-#	sudo rm -rf /etc/nixos/configuration.nix
-    echo
     sudo mv -i ~/VictoryNixos/configuration.nix /etc/nixos
 	echo
 	sleep 3s
@@ -211,7 +209,7 @@ fi
 
 greeting	
 move
-#config
-#update
-#upgrade
-#reboot
+config
+update
+upgrade
+reboot
