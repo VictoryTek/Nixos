@@ -209,6 +209,7 @@ fi
 
 greeting	
 move
+secrets
 config
 update
 upgrade
