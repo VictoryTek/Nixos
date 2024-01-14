@@ -1,7 +1,7 @@
 # Victory Nixos Configuration
 # Server Version
 # Version 1.6
-# NixOS Version 23.05
+# NixOS Version 23.11
 # https://github.com/VictoryTek
 
 
