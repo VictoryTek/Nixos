@@ -116,8 +116,8 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/users.nix /etc/nixos/modules/system
     sudo mv -i /home/$USER/VictoryNixos/update.sh /home/$USER/Documents
     sudo mv -i /home/$USER/VictoryNixos/Version_Upgrade.sh /home/$USER/Documents
-    sudo mv -i /home/$USER/VictoryNixos/smb-data /etc/nixos/secrets
-    sudo mv -i /home/$USER/VictoryNixos/smb-mydata /etc/nixos/secrets
+    sudo mv -i /home/$USER/VictoryNixos/modules/smb-data /etc/nixos/secrets
+    sudo mv -i /home/$USER/VictoryNixos/modules/smb-mydata /etc/nixos/secrets
 	echo
 	echo "NixOS modules have been placed"
 	echo
