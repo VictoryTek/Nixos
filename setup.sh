@@ -122,7 +122,7 @@ function move() {
 	echo "NixOS modules have been placed"
 	echo
     check_exit_status
-}
+}  
 
 # Stop the running container
 function secrets() {
