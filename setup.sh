@@ -211,7 +211,7 @@ fi
 
 greeting	
 move
-config
-update
-upgrade
-reboot
+#config
+#update
+#upgrade
+#reboot
