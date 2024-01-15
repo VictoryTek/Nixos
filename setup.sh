@@ -205,8 +205,6 @@ fi
 }
 
 
-
-
 greeting	
 move
 secrets
