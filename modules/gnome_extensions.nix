@@ -7,13 +7,8 @@
 {
 
   # Enable Gnome Extensions.
-  environment.systemPackages = [
-    # Install Tiling Assistant exxtension
-    pkgs = {
-        gnomeExtensions = {
-            tiling-assistant;
-        };
-    };
+   environment.systemPackages = [
+    pkgs.gnomeExtensions.tiling-assistant
   ];
 
 }
