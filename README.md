@@ -24,5 +24,5 @@ To Upgrade to the next version of NixOS
 ```
 cd Documents
 
-./version_upgrade.sh
+./Version_Upgrade.sh
 ```
