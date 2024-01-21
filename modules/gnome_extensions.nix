@@ -1,4 +1,4 @@
-# Flatpak Configuration
+# Gnome Extensions Configuration
 # https://github.com/VictoryTek
 # Ver. 1.0
 
