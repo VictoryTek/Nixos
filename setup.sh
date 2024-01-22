@@ -111,6 +111,7 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/traefik.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/qemu_kvm.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/virtualbox.nix /etc/nixos/modules/services
+    sudo mv -i /home/$USER/VictoryNixos/modules/xrdp.nix /etc/nixos/modules/services
     sudo mv -i /home/$USER/VictoryNixos/modules/cleanup.nix /etc/nixos/modules/system
     sudo mv -i /home/$USER/VictoryNixos/modules/flakes-enabled.nix /etc/nixos/modules/system
     sudo mv -i /home/$USER/VictoryNixos/modules/nur.nix /etc/nixos/modules/system

@@ -31,6 +31,7 @@
 #      ./modules/services/traefik.nix
 #      ./modules/services/qemu_kvm.nix
 #      ./modules/services/virtualbox.nix
+#      ./modules/services/xrdp.nix
 #      ./modules/system/flakes-enabled.nix
 #      ./modules/system/nur.nix
 #      ./modules/system/cleanup.nix
