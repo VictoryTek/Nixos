@@ -15,6 +15,7 @@
       ./modules/de/gnome.nix
 #      ./modules/installs/gnome_extensions.nix
 #      ./modules/installs/packages.nix
+#      ./modules/installs/rustdesk.nix
 #      ./modules/installs/virtualbox-ga.nix
       ./modules/network/dhcp.nix
 #      ./modules/network/static.nix

@@ -27,7 +27,6 @@
       killall
       neofetch
       ntfs3g
-      rustdesk
       terminator
       git
       packagekit

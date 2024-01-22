@@ -95,6 +95,7 @@ function move() {
     sudo mv -i /home/$USER/VictoryNixos/modules/gnome.nix /etc/nixos/modules/de
 	sudo mv -i /home/$USER/VictoryNixos/modules/gnome_extensions.nix /etc/nixos/modules/installs
     sudo mv -i /home/$USER/VictoryNixos/modules/packages.nix /etc/nixos/modules/installs
+	sudo mv -i /home/$USER/VictoryNixos/modules/rustdesk.nix /etc/nixos/modules/installs
     sudo mv -i /home/$USER/VictoryNixos/modules/virtualbox-ga.nix /etc/nixos/modules/installs
     sudo mv -i /home/$USER/VictoryNixos/modules/dhcp.nix /etc/nixos/modules/network
     sudo mv -i /home/$USER/VictoryNixos/modules/static.nix /etc/nixos/modules/network
