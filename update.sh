@@ -98,6 +98,18 @@ function update() {
     check_exit_status
 }
 
+# Reboot automatically
+function auto_reboot() {
+	echo
+	shutdown --reboot 1
+    echo
+	echo "Rebooting in 1 minute"
+    echo
+    sleep 90
+	echo
+    check_exit_status
+}
+
 # Reboot
 function reboot() {
     	echo "Do you want to restart? [y,n]"
@@ -139,4 +151,5 @@ fi
 greeting	
 channel
 update
+#auto_reboot
 reboot
