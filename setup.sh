@@ -133,14 +133,14 @@ function secrets() {
 	sudo chmod 0600 /etc/nixos/secrets/smb-data
 	sudo chmod 0600 /etc/nixos/secrets/smb-mydata
 	echo
-	sudo mv /etc/nixos/secrets /etc/nixos/.secrets
+	sudo mv -i /etc/nixos/secrets /etc/nixos/.secrets
 	echo
     check_exit_status
 }
 
 # Change configs and activate modules
 function config() {
-    sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.old
+    sudo mv -i /etc/nixos/configuration.nix /etc/nixos/configuration.nix.old
     echo
     sudo mv -i ~/VictoryNixos/configuration.nix /etc/nixos
 	echo
