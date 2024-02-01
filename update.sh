@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Docker Update script for NixOS
-# Ver. 1.3
+# Ver. 1.4
 
 #####################################################################
 #  ____    ____  __                                                 #
@@ -110,8 +110,8 @@ function auto_reboot() {
     check_exit_status
 }
 
-# Reboot
-function reboot() {
+# Reboot Ask
+function ask_reboot() {
     	echo "Do you want to restart? [y,n]"
 	read input
 
@@ -152,4 +152,4 @@ greeting
 channel
 update
 #auto_reboot
-reboot
+ask_reboot
