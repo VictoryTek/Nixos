@@ -85,7 +85,7 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on  ).
   system = {
-    stateVersion = "23.05";
+    stateVersion = "23.11";
   };
   # Did you read the comment?
 
