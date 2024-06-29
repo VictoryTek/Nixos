@@ -1,7 +1,7 @@
 # Victory Nixos Configuration
 # Server Version
-# Version 1.6
-# NixOS Version 23.11
+# Version 1.7
+# NixOS Version 24.05
 # https://github.com/VictoryTek
 
 
@@ -86,7 +86,7 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on  ).
   system = {
-    stateVersion = "23.11";
+    stateVersion = "24.05";
   };
   # Did you read the comment?
 
