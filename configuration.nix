@@ -76,10 +76,12 @@
   };
 
   # Configure keymap in X11
-  services = {
+  services  = {
     xserver = {
-      layout = "us";
-      xkbVariant = "";
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
     };
   };
 
