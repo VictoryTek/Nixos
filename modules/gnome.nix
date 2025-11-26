@@ -14,15 +14,17 @@
         gdm = {
           enable = true;
         };
-        autoLogin = {
-          enable = true;
-          user = "nimda";
-        };
       };
       desktopManager = {
         gnome = {
-          enable =true;
+          enable = true;
         };
+      };
+    };
+    displayManager = {
+      autoLogin = {
+        enable = true;
+        user = "nimda";
       };
     };
   };
