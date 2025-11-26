@@ -56,10 +56,9 @@
   # Packages to be removed
   environment = {
     gnome = {
-      excludePackages = (with pkgs; [
+      excludePackages = with pkgs; [
         gnome-photos
         gnome-tour
-      ]) ++ (with pkgs.gnome; [
         cheese # webcam tool
         gnome-music
         epiphany # web browser
@@ -74,14 +73,14 @@
         gnome-maps
         gnome-clocks
         gnome-weather
-      ]);
+      ];
     };
   };
 
   # Install necessary packages
   environment = {
     systemPackages = with pkgs; [
-        gnome.gnome-tweaks
+      gnome-tweaks
     ];
   };
   
