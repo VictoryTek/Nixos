@@ -21,6 +21,7 @@
       firefox
       #Utilities
       cifs-utils
+      grsync
       htop
       inxi
       iproute2
